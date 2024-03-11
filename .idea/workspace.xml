@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d763797e-f755-4450-9a87-85d884a1eef8" name="Changes" comment="part 1 create base class">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Command.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/NothingToUndo.java" afterDir="false" />
+    <list default="true" id="d763797e-f755-4450-9a87-85d884a1eef8" name="Changes" comment="part 2 apply command for Undo">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Loadable.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Account.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
@@ -19,8 +18,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -66,7 +65,15 @@
       <option name="project" value="LOCAL" />
       <updated>1710175491403</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="part 2 apply command for Undo">
+      <option name="closed" value="true" />
+      <created>1710175804515</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1710175804515</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -82,6 +89,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="part 1 create base class" />
-    <option name="LAST_COMMIT_MESSAGE" value="part 1 create base class" />
+    <MESSAGE value="part 2 apply command for Undo" />
+    <option name="LAST_COMMIT_MESSAGE" value="part 2 apply command for Undo" />
   </component>
 </project>

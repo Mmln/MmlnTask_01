@@ -1,5 +1,4 @@
 package org.example;
-
 import java.math.BigDecimal;
 import java.text.DecimalFormat;
 import java.util.ArrayDeque;
@@ -10,6 +9,25 @@ public class Account {
     private String name;
     private HashMap<CurTypes, BigDecimal> currencies;
     private Deque<Command> commands = new ArrayDeque<>();
+
+    public Loadable Save() {return new Snapshot();}
+    private class Snapshot implements Loadable
+    {
+        private String name;
+        private HashMap<CurTypes, BigDecimal> currencies;
+
+        public Snapshot ()
+        {
+            this.name = Account.this.name;
+            this.currencies = new HashMap<>(Account.this.currencies);
+
+        }
+        @Override
+        public void load() {
+            Account.this.name = this.name;
+            Account.this.currencies = new HashMap<>(this.currencies);
+        }
+    }
 
     private Account(){}
     public Account(String name) {
